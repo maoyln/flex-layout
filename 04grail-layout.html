@@ -6,9 +6,12 @@
   <title>flex布局-圣杯布局</title>
 </head>
 <style>
+  body {
+    margin: 0;
+  }
   .grail-layout {
     display: flex;
-    background-color: #eee;
+    background-color: #8c7deb;
     flex-direction: column;
     text-align: center;
     height: 100vh;
@@ -17,17 +20,18 @@
   .grail-layout .wrap {
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: rgb(214, 255, 127);
     flex: 1;
   }
 
   .grail-layout .wrap .left, .grail-layout .wrap .right {
-    background-color: blue;
+    background-color: rgb(0, 255, 204);
     width: 200px;
   }
 
   .grail-layout header, .grail-layout footer {
-    height: 40px;
+    height: 50px;
+    line-height: 50px;
   }
 
 </style>
