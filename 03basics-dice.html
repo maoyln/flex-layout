@@ -6,8 +6,71 @@
   <title>flex基础布局-骰子</title>
 </head>
 <style>
+  /* 一 */
+  .first-face { /* 形成上下左右居中 */
+    display: flex;
+    /* 项目在主轴上居中 */
+    justify-content: center;
+    /* 项目在交叉轴上居中 */
+    align-items: center;
+  }
+  /* 二 */
+  .second-face {
+    display: flex;
+    /* 两侧对齐 */
+    justify-content: space-between;
+  }
+  .second-face .pip:nth-of-type(2) {
+    /* 居下 */
+    align-self: flex-end;
+  }/* 三 */
+  .third-face {
+    display: flex;
+    /* 两侧对齐 */
+    justify-content: space-between;
+  }
+  .third-face .pip:nth-of-type(2) {
+    /* 居中 */
+    align-self: center;
+  }
+  .third-face .pip:nth-of-type(3) {
+    /* 居下 */
+    align-self: flex-end;
+  }
+  /* 四 、六*/
+  .fourth-face,
+  .sixth-face {
+    display: flex;
+    /* 两侧对齐 */
+    justify-content: space-between;
+  }
+  .fourth-face .column,
+  .sixth-face .column {
+    display: flex;
+    /* 纵向排列 */
+    flex-direction: column;
+    /* 两侧对齐 */
+    justify-content: space-between;
+  }
+  /* 五 */
+  .fifth-face {
+    display: flex;
+    /* 两侧对齐 */
+    justify-content: space-between;
+  }
+  .fifth-face .column {
+    display: flex;
+    /* 纵向排列 */
+    flex-direction: column;
+    /* 两侧对齐 */
+    justify-content: space-between;
+  }
+  .fifth-face .column:nth-of-type(2) {
+    /* 居中对齐 */
+    justify-content: center;
+  }
 /* 基础样式 */
-.box {
+.box2 {
   display: flex;
   /* 项目在交叉轴上居中 */
   align-items: center;
@@ -39,64 +102,6 @@
   margin: 4px;  background-color: #333;
   box-shadow: inset 0 3px #111, inset 0 -3px #555;
 }
-
-/* 骰子1点 */
-.first-face {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* 骰子2点 */
-.second-face {
-  display: flex;
-  justify-content: space-between;
-}
-
-.second-face .pip:nth-of-type(2) {
-  align-self: flex-end;
-}
-
-/* 骰子3点 */
-.third-face {
-  display: flex;
-  justify-content: space-between;
-}
-.third-face .pip:nth-of-type(2) {
-  align-self: center;
-}
-.third-face .pip:nth-of-type(3) {
-  align-self: flex-end;
-}
-
-/* 骰子4点 */
-.fourth-face, .sixth-face {
-  display: flex;
-  justify-content: space-around;
-  align-self: stretch;
-}
-.fourth-face .column, .sixth-face .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-/* 骰子5点 */
-.fifth-face {
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: space-between;
-}
-
-.fifth-face .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.fifth-face .column:nth-child(2) {
-  justify-content: center;
-}
-
 </style>
 <body>
   <div class="box">
