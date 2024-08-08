@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex布局-圣杯布局</title>
+</head>
+<style>
+  .grail-layout {
+    display: flex;
+    background-color: #eee;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .grail-layout .wrap {
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    flex: 1;
+  }
+
+  .grail-layout .wrap .left, .grail-layout .wrap .right {
+    background-color: blue;
+    width: 200px;
+  }
+
+  .grail-layout header, .grail-layout footer {
+    height: 40px;
+  }
+
+</style>
+<body>
+  <div class="grail-layout">
+    <header>#header</header>
+    <div class="wrap">
+      <div class="left">left固定200px</div>
+      <div class="contant">center宽度自适应</div>
+      <div class="right">right宽度固定200px</div>
+    </div>
+    <footer>#footer</footer>
+  </div>
+</body>
+</html>
