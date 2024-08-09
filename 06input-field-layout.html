@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>输入框布局</title></title>
+</head>
+<style>
+  .input-adaptive {
+    display: flex;
+  }
+  .button-item {
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    background: #eee
+  }
+  .field {
+    flex: 1;
+    height: 30px;
+    padding: 1px 6px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+  }
+
+  .container {
+    display: flex;
+    border: 1px solid #eee;
+    margin-top: 20px;
+  }
+  .container .left {
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+<body>
+  <div class="input-adaptive">
+    <span class="button-item">icon</span>
+    <input class="field" type="text" placeholder="input宽度自适应">
+    <button class="button-item">提交</button>
+  </div>
+
+  <div class="container">
+    <div class="left">左侧固定</div>
+    <div class="right">右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应右侧自适应</div>
+  </div>
+</body>
+</html>
