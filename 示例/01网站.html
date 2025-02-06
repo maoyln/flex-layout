@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container {
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    /* 布局方式 */
+    display: flex;
+    /* 设置间距 */
+    gap: 12px;
+
+    /* 设置换行 */
+    flex-wrap: wrap;
+    
+    /* 设置多行交叉行排列方式 */
+    align-content: flex-start;
+  }
+
+  .container .box {
+    border: 1px solid #ccc;
+    width: 150px;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 12px;
+  }
+
+  img {
+    border-radius: 12px 12px 0 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title .main-title {
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .title .subheading {
+    color:blue;
+    font-size: 12px;
+    white-space: nowrap;      /* 防止换行 */
+    overflow: hidden;         /* 隐藏超出部分 */
+    text-overflow: ellipsis;  /* 省略号 */
+  }
+
+</style>
+<body>
+  <div class="container">
+    <!-- 第一行 -->
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+
+    <!-- 第二行 -->
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+
+    <!-- 第三行 -->
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+
+    <!-- 第四行 -->
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+
+    <!-- 第五行 -->
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+
+    <!-- 第六行 -->
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://img.yzcdn.cn/vant/cat.jpeg" alt="">
+      <div class="title">
+        <div class="main-title">封面名称</div>
+        <div class="subheading">这是一个封面说明，简单介绍</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
